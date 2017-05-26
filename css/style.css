@@ -244,3 +244,93 @@
     line-height: 30px;
     font-size: 15px;
 }
+
+.intro{
+    background: url(../img/nav.jpg);
+    background-attachment: fixed;
+    padding-left:120px;
+    padding-right:100px;
+    padding-top:100px;
+    padding-bottom:90px;
+    background-position: center;
+    background-size: 100% 630px;
+}
+
+.intro > .row{
+    background-color: rgba(255,255,255,0.7);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.intro > .row > .col-lg-6{
+    padding: 50px;
+}
+
+.intro > .row > .next{
+    padding: 50px;
+}
+
+.intro > .row > .col-lg-6 > p{
+    color: teal;
+    line-height: 80px;
+    font-size: 50px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.intro > .row > .next > p{
+    color: teal;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: normal;
+}
+.container > .row{
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+    .intro{
+        background: url(../img/nav.jpg);
+        background-attachment: fixed;
+        padding: 0;
+        padding-left: 30px;
+        background-position: center;
+    }
+
+    .intro > .row{
+        background-color: rgba(255,255,255,0.8);
+        width: 100%;
+    }
+
+    .intro > .row > .col-lg-6{
+        padding: 30px;
+    }
+
+    .intro > .row > .col-lg-6 > p{
+        color: teal;
+        line-height: 70px;
+        font-size: 30px;
+        text-align: left;
+        font-weight: normal;
+    }
+    .intro > .row > .next{
+        padding: 30px;
+    }
+    .intro > .row > .next > p{
+        color: teal;
+        line-height: 40px;
+        font-size: 20px;
+        text-align: left;
+        font-weight: normal;
+    }
+}
+
+.portfolio > .row > h1{
+    padding-bottom: 50px;
+}
+
+.portfolio > .row > .col-lg-4 > .card{
+    margin-bottom: 70px;
+}
