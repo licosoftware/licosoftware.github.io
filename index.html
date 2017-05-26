@@ -23,26 +23,39 @@
       <meta property="og:type" content="website" />
    </head>
    <body>
+      <div class="loader-page teal" style="position:fixed;height:1000px;z-index:9999;width:100%;text-align:center;">
+        <div class="preloader-wrapper big active" style="left:0;top:25%;z-index:9999;">
+            <div class="spinner-layer spinner-yellow-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+        </div>
+    </div>
       <nav class="navbar navbar-default navbar-fixed-top transparent" role="navigation">
         <div class="container-fluid" style="padding-left: 10px;padding-right:20px;">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <i class="fa fa-bars" id="toggle-bar"></i>
+              <i class="fa fa-bars teal-text" id="toggle-bar"></i>
             </button>
             <a class="navbar-brand" href="#">
             <img src="./img/icon.png" style="width:60px;" title="lico logo" alt="licosoftwares">&nbsp;
-            Lico Softwares</a>
+            <b>Lico Softwares</b></a>
           </div>
       
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Home</a></li>
-              <li><a href="#services" title="services">Services</a></li>
+              <li><a href="#services" title="Services">Services</a></li>
+              <li><a href="#about" title="About">About</a></li>
               <li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
               <li><a href="#">Products</a></li>
-              <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -68,25 +81,31 @@
         <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
         <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
       </div>
-      <div class="container-fluid products">
+      <div class="container-fluid products teal">
         <div class="row">
-          <div class="col-lg-1 col-md-1 text-right work-with col-xs-4">
+          <div class="col-lg-1 col-md-1 text-right work-with col-xs-4 wow slideInLeft" data-wow-delay="0.9s">
             WE<br>WORK<br>WITH
           </div>
           <div class="col-lg-11 col-md-11 languages col-xs-8">
-            <marquee>
-              HTML CSS BOOTSTRAP MATERIALCSS PHP DJANGO NODEJS JAVA ANDROID ADOBE
+            <marquee><img src="./icons/html.png" style="width: 70px;" />
+              <img src="./icons/php.png" style="width: 70px;" />
+              <img src="./icons/js.ico" style="width: 70px;" />
+              <img src="./icons/jquery.png" style="width: 70px;" />
+              <img src="./icons/nodejs.png" style="width: 70px;" />
+              <img src="./icons/django.png" style="width: 70px;" />
+              <img src="./icons/java.png" style="width: 70px;" />
+              <img src="./icons/psd.png" style="width: 70px;" />
             </marquee>
           </div>
         </div>
       </div>
       <div class="container-fluid services" id="services">
         <div class="row">
-          <h1 class="text-center"><b>Our Services</b></h1>
+          <h1 class="text-center teal-text"><b>Our Services</b></h1>
           <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
-            <div class="card">
+            <div class="card wow slideInUp" data-wow-delay="0.5s">
               <div class="card-action">
-                <h3 class="panel-title"><b><i class="fa fa-desktop teal-text"></i><i class="fa fa-mobile teal-text"></i><br>WEBSITE DESIGN</b></h3>
+                <h3 class="panel-title"><b><i class="fa fa-desktop teal-text wow rotateInDownLeft" data-wow-delay="0.9s"></i><i class="fa fa-mobile teal-text wow rotateIn" data-wow-delay="1.5s"></i><br>WEBSITE DESIGN</b></h3>
               </div>
               <div class="card-content">
                 <ul>
@@ -100,9 +119,9 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
-            <div class="card">
+            <div class="card wow slideInUp" data-wow-delay="0.6s">
               <div class="card-action">
-                <h3 class="panel-title"><b><i class="fa fa-android teal-text"></i><br>MOBILE APP SERVICES</b></h3>
+                <h3 class="panel-title"><b><i class="fa fa-android teal-text wow rotateInDownLeft" data-wow-delay="0.9s"></i><br>MOBILE APP SERVICES</b></h3>
               </div>
               <div class="card-content">
                 <ul>
@@ -116,9 +135,9 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
-            <div class="card">
+            <div class="card wow slideInUp" data-wow-delay="0.7s">
               <div class="card-action">
-                <h3 class="panel-title"><b><i class="fa fa-rocket teal-text"></i><br>SOFTWARES</b></h3>
+                <h3 class="panel-title"><b><i class="fa fa-rocket teal-text wow rotateInDownLeft" data-wow-delay="0.9s"></i><br>SOFTWARES</b></h3>
               </div>
               <div class="card-content">
                 <ul>
@@ -132,9 +151,9 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
-            <div class="card">
+            <div class="card wow slideInUp" data-wow-delay="0.8s">
               <div class="card-action">
-                <h3 class="panel-title"><b><i class="fa fa-globe teal-text"></i><br>DIGITAL MARKETING</b></h3>
+                <h3 class="panel-title"><b><i class="fa fa-globe teal-text wow rotateInDownLeft" data-wow-delay="0.9s"></i><br>DIGITAL MARKETING</b></h3>
               </div>
               <div class="card-content">
                 <ul>
@@ -149,12 +168,12 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid intro">
+      <div class="container-fluid intro" id="about">
         <div class="row">
-          <div class="col-lg-6 col-md-6">
+          <div class="col-lg-6 col-md-6 wow slideInLeft" data-wow-delay="0.9s">
             <p>LicoSoftwares is a leading Indian based Tech startup established in the year 2106. It's located in India and based in Tamilnadu.</p>
           </div>
-          <div class="col-lg-6 col-md-6 next">
+          <div class="col-lg-6 col-md-6 next wow slideInRight" data-wow-delay="0.9s">
             <p>At LicoSoftwares, we will work together to far exceed client expectation by consistently delivering service excellence through continuous improvement in quality. We will also work towards achieving consistent growth for each of LicoSoftwares family members as well as the entire organization with the support of an empowered team."</p>
             <p><br>Our developers also develop products will solves the problen faced by the society in terms of Digital technology.</p>
           </div>
@@ -162,9 +181,9 @@
       </div>
       <div class="container portfolio" id="portfolio">
         <div class="row">
-          <h1 class="text-center"><b>Our Portfolio</b></h1>
+          <h1 class="text-center teal-text"><b>Our Portfolio</b></h1>
           <div class="col-lg-4 col-md-4">
-            <div class="card hoverable">
+            <div class="card hoverable wow bounceInUp" data-wow-delay="0.9s">
               <div class="card-image">
                 <img src="./img/portfolio/dragon.png" style="height: 250px;">
                 <span class="card-title"><b>Dragon Fruit</b></span>
@@ -175,7 +194,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4">
-            <div class="card hoverable">
+            <div class="card hoverable wow bounceInUp" data-wow-delay="1s">
               <div class="card-image">
                 <img src="./img/portfolio/techtrendz.png" style="height: 250px;">
                 <span class="card-title"><b>Techtrendz</b></span>
@@ -187,9 +206,33 @@
           </div>
         </div>
       </div>
+      <footer class="page-footer teal">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <a href="#" class="white-text" title="LicoSoftwares Logo"><h3><b>Lico Softwares</b></h3></a>
+              <p class="grey-text text-lighten-4 text-justify" style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LicoSoftwares is the leading Indian based Tech startup established in the year 2106. We are located in India and based in Tamilnadu. Our service extends from making a business online to developing innovative products.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h3 class="white-text"><b>Other Links</b></h3>
+              <ul style="font-size: 20px;">
+                <li><a class="grey-text text-lighten-3" href="http://facebook.com/licosoftwares">Facebook</a></li>
+                <li><a class="grey-text text-lighten-3" href="http://github.com/licosoftwares">Github</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">LicoPress</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2017 LicoSoftwares
+          <a class="grey-text text-lighten-4 right" href="http://facebook.com/satheesh1997" title="Satheesh Kumar CEO LicoSoftwares">Design: Satheesh Kumar</a>
+          </div>
+        </div>
+        </footer>
       <script type="text/javascript" src="./js/jquery.1.8.3.min.js"></script>
       <script type="text/javascript" src="./js/bootstrap.js"></script>
-      <script type="text/javascript" src="./js/lico.js"></script>
       <script type="text/javascript" src="./js/wow.js"></script>
+      <script type="text/javascript" src="./js/lico.js"></script>
    </body>	
 </html>
