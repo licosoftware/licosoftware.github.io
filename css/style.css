@@ -189,6 +189,12 @@
 	}
 }
 
+@media only screen and (min-height: 600px) {
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	    height:600px;
+	}
+}
+
 .products{
 	height: 100px;
 	background: black;
