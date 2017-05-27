@@ -169,7 +169,7 @@
     top: 15px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .carousel-inner > .item > img, .carousel-inner > .item > a > img {
 	    height:450px;
 	}
