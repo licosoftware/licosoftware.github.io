@@ -169,9 +169,9 @@
     top: 15px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-	    height:450px;
+	    height:500px;
 	}
 	.transparent .navbar-nav > li > a:hover {
 	    border-top:3px solid transparent;
@@ -180,6 +180,12 @@
 	.transparent .navbar-nav > li > a:focus {
 	    border-top:3px solid transparent;
 	    color: red;
+	}
+}
+
+@media only screen and (max-height: 500px) {
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	    height:400px;
 	}
 }
 
