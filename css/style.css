@@ -6,6 +6,27 @@
 	font-family:jose;
 }
 
+.preloader{
+    position: absolute;
+    transition: 1s all ease;
+    background:rgba(0,0,0,0.9);
+    /*background:url(../img/pre.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: fixed;
+    width: 100%;
+    z-index:9999;
+    text-align: center;
+    height: 100vh;
+}
+.preloader > i{
+    position: relative;
+    top:37vh;
+    color: white;
+}
+
 .navbar {
     min-height: 70px;
     transition: .5s all ease-in;
@@ -340,4 +361,51 @@
 
 .portfolio > .row > .col-lg-4 > .card{
     margin-bottom: 70px;
+}
+
+#contact{
+    background: url(../img/contact.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 630px;
+    background-repeat: no-repeat;
+}
+
+#contact{
+    margin:0px;
+    padding: 0px;
+}
+
+#contact > .row{
+    padding: 30px;
+    background-color: rgba(255,255,255,0.7);
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+#contact > .row > .col{
+    margin-top: 50px;
+}
+
+#contact > .row > .col > hr{
+    border-color: red;
+    width: 20%;
+}
+
+address{
+    font-size: 19px;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+.mobile-num{
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 35px;
+}
+
+#map{
+    width: 100%;
+    height:200px;
 }

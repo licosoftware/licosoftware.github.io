@@ -23,19 +23,9 @@
       <meta property="og:type" content="website" />
    </head>
    <body>
-      <div class="loader-page teal" style="position:fixed;height:1000px;z-index:9999;width:100%;text-align:center;">
-        <div class="preloader-wrapper big active" style="left:0;top:25%;z-index:9999;">
-            <div class="spinner-layer spinner-yellow-only">
-              <div class="circle-clipper left">
-                <div class="circle"></div>
-              </div><div class="gap-patch">
-                <div class="circle"></div>
-              </div><div class="circle-clipper right">
-                <div class="circle"></div>
-              </div>
-            </div>
-        </div>
-    </div>
+      <div class="preloader">
+        <i class="fa fa-cog fa-spin fa-5x fa-fw"></i>
+      </div>
       <nav class="navbar navbar-default navbar-fixed-top transparent">
         <div class="container-fluid" style="padding-left: 10px;padding-right:20px;">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -56,7 +46,7 @@
               <li><a href="#about" title="About">About</a></li>
               <li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
               <li><a href="#">Products</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div>
@@ -224,20 +214,49 @@
           </div>
         </div>
       </div>
+      <div class="container-fluid" id="contact">
+        <div class="row">
+          <h1 class="text-center teal-text"><b>Contact Us</b></h1>
+          <div class="col l4 m4 s12 wow bounceInUp" data-wow-delay=".5s">
+            <h3 class="teal-text"><b>Head Office</b></h3>
+            <hr align="left" />
+            <address>
+              206/1, Shanmuga Nagar,<br>
+              Sanganoor Road,<br>
+              Ratinapuri Post,<br>
+              Coimbatore,<br>
+              Tamil Nadu,<br>
+              India - 641027.
+            </address>
+          </div>
+          <div class="col l4 m4 s12 wow bounceInUp" data-wow-delay=".5s">
+            <h3 class="teal-text"><b>Call Us</b></h3>
+            <hr align="left" />
+            <p class="mobile-num">+91-9597264229</p>
+            <p class="mobile-num">+91-9942760018</p>
+            <p class="mobile-num">+91-8524993190</p>
+          </div>
+          <div class="col l4 m4 s12 wow bounceInUp" data-wow-delay=".5s">
+            <h3 class="teal-text"><b>Reach Us</b></h3>
+            <hr align="left" />
+            <div id="map" class="z-depth-4"></div>
+          </div>
+        </div>
+      </div>
       <footer class="page-footer teal">
         <div class="container">
           <div class="row">
-            <div class="col l6 s12">
+            <div class="col l6 s12 wow bounceInUp" data-wow-delay=".5s">
               <a href="#" class="white-text" title="LicoSoftwares Logo"><h3><b>Lico Softwares</b></h3></a>
               <p class="grey-text text-lighten-4 text-justify" style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LicoSoftwares is the leading Indian based Tech startup established in the year 2016. We are located in India and based in Tamilnadu. Our service extends from making a business online to developing innovative products.</p>
               <p><br><br><img src="./icons/w3c-validated.png" style="width: 150px;" alt="licosoftwares-w3c"></p>
             </div>
-            <div class="col l4 offset-l2 s12">
+            <div class="col l4 offset-l2 s12 wow bounceInUp" data-wow-delay=".5s">
               <h3 class="white-text"><b>Other Links</b></h3>
               <ul style="font-size: 20px;">
                 <li><a class="grey-text text-lighten-3" href="http://facebook.com/licosoftwares">Facebook</a></li>
-                <li><a class="grey-text text-lighten-3" href="http://github.com/licotech">Github</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">LicoPress</a></li>
+                <li><a class="grey-text text-lighten-3" href="http://github.com/licosoftwares">Github</a></li>
+                <li><a class="grey-text text-lighten-3" href="http://facebook.com/satheesh1997">Satheesh Kumar</a></li>
               </ul>
             </div>
           </div>
@@ -253,5 +272,8 @@
       <script type="text/javascript" src="./js/bootstrap.js"></script>
       <script type="text/javascript" src="./js/wow.js"></script>
       <script type="text/javascript" src="./js/lico.js"></script>
-   </body>	
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsY8WQacdKwWv9Mq-VOrUD8Z-sf5eIBL0&callback=initMap">
+      </script>
+  </body>	
 </html>

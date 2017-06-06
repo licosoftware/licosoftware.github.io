@@ -27,11 +27,11 @@ $(document).ready(function() {
 
 function loader(status){
     if (status == 0){
-        $(".loader-page").fadeOut('slow');
+        $(".preloader").fadeOut('slow');
         enableScrolling();
     }
     else if (status == 1){
-        $(".loader-page").fadeIn('fast');
+        $(".preloader").fadeIn('fast');
         disableScrolling();
     }
 }
@@ -81,3 +81,21 @@ $('a[href*="#"]')
       }
     }
   });
+
+function initMap() {
+  var uluru = {lat: 11.035791, lng: 76.9513806};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: uluru
+  });
+
+  var marker = new google.maps.Marker({
+    position: uluru,
+    title: "Head Office",
+    map: map
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    window.location = "https://www.google.co.in/maps/place/Aplus+Incorporation/@11.0357462,76.9531455,19z/data=!4m5!3m4!1s0x3ba8588d4de6628f:0x45840023841b618!8m2!3d11.0357857!4d76.9535747";
+  });
+}
